@@ -35,8 +35,12 @@ Do the following:
 
    HINT: no function required
 */
-
-
+let name = 'Cannen';
+let myAge = 23;
+if(myAge >= 21){
+  name = 'Charles';
+}
+console.log(name);
 
 
 
@@ -50,6 +54,8 @@ Do the following:
 
    HINT: look up the Number method
 */
+let year = "1999";
+console.log(year.toString());
 
 
 
@@ -79,10 +85,10 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(humanYears){
+  return humanYears * 7;
 }
-
+console.log(humanYears(15));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -112,10 +118,31 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
-}
+function hungryDog(weightP,age){
+  
+  if(age >= 1 && weightP <= 5){
+    return weightP * .05;
+  }else if(age >= 1 && weightP > 6 || weightP < 10){
+    return weightP * .04;
+  }else if(age >= 1 && weightP > 11 || weightP < 15){
+    return weightP * .03
+  }else if(age >= 1 && weightP > 15){
+    return weightP * .02
+  }else{
+    console.log('Invalid response!');
+  }
 
+  if(age > .2 || age < .4){
+    return weightP * .1;
+  }else if(age > .4 || age < .7){
+    return weightP * .05;
+  }else if(age > .7 || age < 1){
+    return weightP * .04;
+  }else{
+    console.log('Invalid');
+  }
+}
+console.log(2,25);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
